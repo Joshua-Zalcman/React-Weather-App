@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: Helvetica, Arial;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 30px;
+  background-position: center;
+}
+.location-input {
+  font-family: inherit;
+  border: 0;
+  border-radius: 5px 0 0 5px;
+  color: black;
+  padding: 5px 5px;
+}
+button {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  padding: 5px 5px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  border-radius: 0 5px 5px 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.header {
+  margin: 25px 0;
+  color: lightblue;
+  text-shadow: 2px 2px 5px black;
+}
+
+h4 {
+  margin-top: 0;
+  color: lightblue;
+  text-align: left;
+}
+
+.forecast {
+  width: 90%;
+  display: inline-block;
+  margin: 15px 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  word-wrap: normal;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+.highlight {
+  color: orange;
+}
+
+.hourly {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.hour {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 15px;
+  border-bottom: 1px solid lightblue;
+}
+
+.hour img {
+  width: 50px;
+  height: 50px;
+}
+
+.five-day {
+  font-size: 20px;
+  line-height: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.five-day a {
+  display: flex;
+  padding: 2px;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  color: white;
+}
+
+.five-day a:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+.five-day-row:before {
+  content: "";
+  display: inline;
+  padding-left: 8px;
+  border-left: 3px solid lightblue;
+}
+
+.five-day-forecast {
+  text-align: left;
+}
+.footer {
+  width: 100%;
+  color: white;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 10px;
+}
+.footer div {
+  padding: 5px;
+}
+.copyright {
+  text-emphasis: right;
+}
+.footer a {
+  text-decoration: none;
+  color: lightblue;
+  font-weight: italic;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin: 10px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
