@@ -9,6 +9,7 @@ body {
   background-repeat: no-repeat;
   padding-top: 30px;
   background-position: center;
+  position: relative;
 }
 .location-input {
   font-family: inherit;

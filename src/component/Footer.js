@@ -12,7 +12,9 @@ function Footer({ hotlink }) {
           photo by <a href={urls.raw}>{user.name}</a>
         </div>
       )}
-      <div className="copyright">&#169; Josh Zalcman</div>
+      <div className="copyright">
+        &#169; <a href="https://github.com/Joshua-Zalcman">Josh Zalcman</a>
+      </div>
     </div>
   );
 }
