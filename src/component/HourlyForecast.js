@@ -6,7 +6,7 @@ import Loader from "./Loader";
 function HourlyForecast({ location }) {
   const { id } = useParams();
 
-  const url = `http://api.openweathermap.org/data/2.5/forecast/?q=${location}&units=metric&appid=9624566aa487525d684f4522c3a677d7`;
+  const url = `https://api.openweathermap.org/data/2.5/forecast/?q=${location}&units=metric&appid=9624566aa487525d684f4522c3a677d7`;
 
   const forecast = useAxiosRequest(url);
 
